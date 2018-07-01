@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/prof_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/photo"/>
+        <LinearLayout
+            android:id="@+id/detail_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name goes here"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:id="@+id/name"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email goes here"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:id="@+id/email"
+                android:gravity="center"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logout from GOOGLE ACCOUNT"
+                android:id="@+id/signout"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/prof_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Post a comment"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:id="@+id/name"
+                android:gravity="center"/>
+            <EditView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type something"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:id="@+id/name"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My comments: "
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:id="@+id/name"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+  <SignInButton>
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/signout"
+      android:layout_marginLeft="50dp"
+      android:layout_marginRight="50dp"
+      android:layout_marginTop="60dp"
+
+  </SignInButton>
+
+
+</LinearLayout>
